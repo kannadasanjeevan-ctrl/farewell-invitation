@@ -243,6 +243,17 @@
             .batch-details { font-size: 1.1em; }
             .closing-message { font-size: 1.1em; }
             .circuit-line, .code-snippet, .geom-shape { display: none; }
+
+            .details-list {
+                gap: 1.2rem; /* Reduced gap between details */
+                margin-top: 1rem; /* Reduced top margin */
+            }
+            .detail-row {
+                margin-bottom: 0.8rem; /* Reduced margin between rows */
+            }
+            .detail-label { font-size: 1.5em; }
+            .detail-value { font-size: 1.1em; }
+            .icon svg { width: 36px; height: 36px; }
         }
         @media (max-width: 480px) {
             .party-title { font-size: 3em; }
@@ -382,6 +393,13 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .details-list {
+                gap: 1.2rem; /* Reduced gap between details */
+                margin-top: 1rem; /* Reduced top margin */
+            }
+            .detail-row {
+                margin-bottom: 0.8rem; /* Reduced margin between rows */
+            }
             .detail-label { font-size: 1.5em; }
             .detail-value { font-size: 1.1em; }
             .icon svg { width: 36px; height: 36px; }
