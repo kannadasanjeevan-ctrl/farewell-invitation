@@ -370,30 +370,27 @@
     
     /* Responsive adjustments */
     @media (max-width: 768px) {
-      .party-title {
-        font-size: 4em;
+      .text-container {
+        max-width: 100vw;
+        padding: 0.5rem;
       }
-      
+
       .farewell-quote {
-        font-size: 1.8em;
+        font-size: 1.1em;
+        line-height: 1.3;
+        word-break: break-word;
+        white-space: normal;
       }
-      
-      .batch-details, .party-info p, .closing-message {
-        font-size: 1.2em;
-      }
-      
-      .typing-effect.long {
-        animation: typing-long-mobile 8s steps(85, end) infinite alternate,
-                   blink-caret 0.75s step-end infinite;
-      }
-      
+
+      .typing-effect.long,
       .typing-effect.short {
-        animation: typing-short-mobile 7s steps(72, end) infinite alternate,
-                   blink-caret 0.75s step-end infinite;
+        animation: none;
+        border-right: none;
+        width: 100vw;
+        max-width: 100vw;
+        white-space: normal;
+        overflow: visible;
       }
-      
-      @keyframes typing-long-mobile { from { width: 0; } to { width: 40ch; } }
-      @keyframes typing-short-mobile { from { width: 0; } to { width: 35ch; } }
     }
   </style>
 </head>
@@ -424,6 +421,7 @@
     <div class="text-container">
       <div class="typing-wrapper">
         <p class="farewell-quote typing-effect long">"Goodbyes are not forever, they simply mean we'll miss your presence..."</p>
+        
       </div>
       <p class="batch-details">The BSc (Hons) in Computer Science – 2018/2019 Batch</p>
     </div>
